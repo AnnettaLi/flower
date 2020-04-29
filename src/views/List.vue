@@ -2,16 +2,16 @@
   <div class="list">
     <div class="content">
       <div class="cagegory">
-        <h2 :class="change=='redList'? 'active':''" @click="changeDetail(redList)">red</h2>
-        <h2 :class="change=='blackList'? 'active':''" @click="changeDetail(blackList)">black</h2>
-        <h2 :class="change=='blueList'? 'active':''" @click="changeDetail(blueList)">blue</h2>
-        <h2 :class="change=='yellowList'? 'active':''" @click="changeDetail(yellowList)">yellow</h2>
+        <h2 :class="this.change === 'redList' ? 'active':''" @click="changeDetail('redList')">red</h2>
+        <h2 :class="this.change=== 'blackList' ? 'active':''" @click="changeDetail('blackList')">black</h2>
+        <h2 :class="this.change=== 'blueList'? 'active':''" @click="changeDetail('blueList')">blue</h2>
+        <h2 :class="this.change=== 'yellowList'? 'active':''" @click="changeDetail('yellowList')">yellow</h2>
       </div>
       <div class="content-detail">
         <div class="every" v-for="item in defaultList" :key="item.id">
           <div class="img"></div>
-          <div class="every-detail">{{item.id}}</div>
-          <div>{{item.mainName}}</div>
+          <div class="every-detail">{{item.mainName}}</div>
+          <!-- <div>{{item.mainName}}</div> -->
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
 export default {
   data() {
     return {
-      change: "redList",
+      change: 'redList',
       defaultList: [],
       redList: [
         {
@@ -34,25 +34,25 @@ export default {
         },
         {
           id: "2",
-          mainName: "pone",
+          mainName: "dsf",
           money: "90",
           detail: "musbdfvjb"
         },
         {
           id: "3",
-          mainName: "pone",
+          mainName: "rg",
           money: "90",
           detail: "musbdfvjb"
         },
         {
           id: "4",
-          mainName: "pone",
+          mainName: "bnrn",
           money: "90",
           detail: "musbdfvjb"
         },
         {
           id: "5",
-          mainName: "pone",
+          mainName: "szc",
           money: "90",
           detail: "musbdfvjb"
         }
@@ -67,7 +67,7 @@ export default {
         },
         {
           id: "2",
-          mainName: "pone",
+          mainName: "hyu",
           money: "90",
           detail: "musbdfvjb"
         }
@@ -75,14 +75,20 @@ export default {
       blueList: [
         {
           id: "1",
-          mainName: "blue",
+          mainName: "iy,",
           money: "90",
           detail: "musbdfvjb",
           img: ""
         },
         {
           id: "2",
-          mainName: "pone",
+          mainName: "yu",
+          money: "90",
+          detail: "musbdfvjb"
+        },
+        {
+          id: "4",
+          mainName: "yu",
           money: "90",
           detail: "musbdfvjb"
         }
@@ -97,7 +103,20 @@ export default {
         },
         {
           id: "2",
-          mainName: "pone",
+          mainName: "i,my",
+          money: "90",
+          detail: "musbdfvjb"
+        },
+        {
+          id: "3",
+          mainName: "black",
+          money: "90",
+          detail: "musbdfvjb",
+          img: ""
+        },
+        {
+          id: "4",
+          mainName: "i,my",
           money: "90",
           detail: "musbdfvjb"
         }
@@ -107,11 +126,24 @@ export default {
 
   methods: {
     changeDetail: function(val) {
-      console.log(val);
-      this.defaultList = [];
-      this.defaultList = val.concat();
       this.change = val;
-      console.log(this.change, "0000")
+      if(val == "redList"){
+        this.defaultList = this.redList.concat();
+      }else if(val == "blackList"){
+        this.defaultList = this.blackList.concat();
+      }
+      else if(val == "blueList"){
+        this.defaultList = this.blueList.concat();
+      }
+      else if(val == "yellowList"){
+        this.defaultList = this.yellowList.concat();
+      }else{
+        this.defaultList = this.redList.concat();
+      }
+      // console.log(val);
+      // this.defaultList = [];
+      // this.defaultList = val.concat();
+      // this.change = val;
     }
   },
   mounted() {
@@ -159,8 +191,18 @@ export default {
   width: 70%;
   background-color: #faa9a9;
 }
+.test {
+  color: #f66;
+}
+.test:checked {
+  color: yellow !important;
+}
+.test:active::after {
+  color: blue !important;
+}
 .active {
   background-color: #333;
   color: red;
+  background: green !important;
 }
 </style>
