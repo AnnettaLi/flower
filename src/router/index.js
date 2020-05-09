@@ -9,10 +9,40 @@ const routes = [
     name: 'list',
     component: () => import('../views/List.vue')
   },
+  // {
+  //   path: '/home',
+  //   name: 'home',
+  //   component: () => import('../views/Home.vue')
+  // },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/',
+    name: 'home',
+    redirect:'/home'
+  },
   {
     path: '/home',
     name: 'home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/flower/home.vue')
+  },
+  {
+    path: '/type',
+    name: 'type',
+    component: () => import('../views/flower/type.vue')
+  },
+  {
+    path: '/my',
+    name: 'my',
+    component: () => import('../views/flower/my.vue')
+  },
+  {
+    path: '/flower/detail/:id',
+    name: 'detail',
+    component: () => import('../views/flower/flowerDetail.vue')
   },
   // {
   //   path: '/about',

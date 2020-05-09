@@ -1,0 +1,142 @@
+@import './global.less';
+
+.login-container {
+    .company-logo {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .login-form {
+
+        width: 370px;
+        box-sizing: border-box;
+        border: 2px solid #eeeeee;
+        margin: 20px auto;
+        border-radius: 4px;
+
+        .login-title {
+            height: 47px;
+
+            ul,
+            li {
+                list-style: none;
+                padding: 0;
+                margin-right: 0;
+                height: 47px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+
+                &>li:first-child {
+                    margin: 0 0 -1px -1px;
+                }
+
+                &>li:last-child {
+                    margin: 0 -1px 0 -1px;
+                    border-left: 1px solid #eeeeee;
+                }
+
+                li {
+                    font-weight: 600;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    text-align: center;
+                    width: 50%;
+                    background-color: white;
+                    line-height: 47px;
+                    border-bottom: 2px solid #eeeeee;
+                }
+
+                li.active {
+                    background-color: #fafafa;
+                    border-bottom: 2px solid @main-color;
+                }
+
+                li:hover {
+                    border-bottom: 2px solid grey;
+                }
+            }
+        }
+
+        .login-body {
+            font-weight: 600;
+            padding: 15px;
+            font-size: 13px;
+
+            .username,
+            password {
+                margin-top: 13px;
+            }
+
+            .username-input,
+            .password-input {
+                margin-top: 10px;
+            }
+        }
+
+        .login-form-footer {
+            font-size: 13px;
+            height: 27px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            line-height: 27px;
+            flex-wrap: nowrap;
+
+            .left {
+                width: 50%;
+
+                label {
+                    cursor: pointer;
+                    margin-left: 5px;
+                }
+            }
+
+            .right {
+                width: 50%;
+
+                text-align: right;
+
+                a {
+                    color: @main-color;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .content-box {
+        height: 100px;
+        width: 100px;
+        border: 10px;
+        box-sizing: content-box;
+        padding: 10px;
+    }
+
+    .border-box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0 0 -1px -1px;
+
+    }
+
+    .padding-box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid grey;
+        box-sizing: padding-box;
+        padding: 10px;
+    }
+}

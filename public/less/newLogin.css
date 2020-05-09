@@ -1,0 +1,568 @@
+.form-border-1,
+.form-b-1 {
+  border: 1px solid #eeeeee;
+}
+.b-top-none {
+  border-top: none;
+}
+.b-right-none {
+  border-right: none;
+}
+.b-left-none {
+  border-left: none;
+}
+.b-bottom-none {
+  border-bottom: none;
+}
+.b-none {
+  border: none;
+}
+.b-bottom-1 {
+  border-bottom: 1px solid #f7f6f9;
+}
+.white-color {
+  color: white;
+}
+.bg-white-color {
+  background-color: white;
+}
+.bg-main-color {
+  background-color: #74003c;
+}
+.form-bg-color {
+  background-color: #f7f6f9;
+}
+.font-main-color {
+  color: #74003c;
+}
+.font-error-color {
+  color: red;
+}
+.comment-child-bg-color {
+  background-color: #fafafa;
+}
+.comment-child-border-bottom {
+  border-bottom: 1px solid #eeeeee;
+}
+.common-horizontal-around-flex,
+.c-h-a-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.common-horizontal-between-flex,
+.c-h-b-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.common-vertical-around-flex,
+.c-v-a-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.common-vertical-between-flex,
+.c-v-b-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.h-20 {
+  height: 20px;
+}
+.l-h-20 {
+  line-height: 20px;
+}
+.h-30 {
+  height: 30px;
+}
+.l-h-30 {
+  line-height: 30px;
+}
+.h-40 {
+  height: 40px;
+}
+.l-h-40 {
+  line-height: 40px;
+}
+.h-60 {
+  height: 60px;
+}
+.l-h-60 {
+  line-height: 60px;
+}
+.h-80 {
+  height: 80px;
+}
+.l-h-80 {
+  line-height: 80px;
+}
+.h-120 {
+  height: 120px;
+}
+.l-h-120 {
+  line-height: 120px;
+}
+.h-160 {
+  height: 160px;
+}
+.l-h-160 {
+  line-height: 160px;
+}
+.h-p-100 {
+  height: 100%;
+}
+.t-h-100 {
+  height: 100px;
+}
+.min-h-40 {
+  min-height: 40px;
+}
+.t-w-80 {
+  width: 80px;
+}
+.t-w-100 {
+  width: 100px;
+}
+.t-w-150 {
+  width: 150px;
+}
+.t-w-200 {
+  width: 200px;
+}
+.t-w-260 {
+  width: 260px;
+}
+.t-w-1200 {
+  width: 1200px;
+}
+.w-5 {
+  width: 5%;
+}
+.w-6 {
+  width: 6%;
+}
+.w-7 {
+  width: 7%;
+}
+.w-8 {
+  width: 8%;
+}
+.w-9 {
+  width: 9%;
+}
+.w-10 {
+  width: 10%;
+}
+.w-11-1 {
+  width: 11.11111%;
+}
+.w-12 {
+  width: 12%;
+}
+.w-13 {
+  width: 13%;
+}
+.w-13-5 {
+  width: 13.5%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-16-6 {
+  width: 16.66666%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-22 {
+  width: 22%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-25-95 {
+  width: 25.95%;
+}
+.w-28 {
+  width: 28%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-33 {
+  width: 33.33333%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-45 {
+  width: 45%;
+}
+.w-49 {
+  width: 49%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-55 {
+  width: 55%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-65 {
+  width: 65%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-85 {
+  width: 85%;
+}
+.w-86-5 {
+  width: 86.5%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-95 {
+  width: 95%;
+}
+.w-100 {
+  width: 100%;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-l-n-1 {
+  margin-left: -1px;
+}
+.m-r-n-1 {
+  margin-right: -1px;
+}
+.m-t-n-1 {
+  margin-top: -1px;
+}
+.m-b-n-1 {
+  margin-bottom: -1px;
+}
+.m-n-1 {
+  margin: -1px;
+}
+.m-left-auto {
+  margin-left: auto;
+}
+.m-right-auto {
+  margin-right: auto;
+}
+.m-center {
+  margin: 0 auto;
+}
+.m-bottom-10,
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-bottom-20,
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-top-5,
+.m-t-5 {
+  margin-top: 5px;
+}
+.m-top-10 {
+  margin-top: 10px;
+}
+.m-top-20 {
+  margin-top: 20px;
+}
+.m-top-30 {
+  margin-top: 30px;
+}
+.m-l-5,
+.m-left-5 {
+  margin-left: 5px;
+}
+.m-left-10 {
+  margin-left: 10px;
+}
+.m-left-15 {
+  margin-left: 15px;
+}
+.m-left-20 {
+  margin-left: 20px;
+}
+.m-right-5,
+.m-r-5 {
+  margin-right: 5px;
+}
+.m-right-10 {
+  margin-right: 10px;
+}
+.m-right-15 {
+  margin-right: 15px;
+}
+.m-right-20 {
+  margin-right: 20px;
+}
+.m-right-25 {
+  margin-right: 25px;
+}
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-left-5 {
+  padding-left: 5px;
+}
+.p-right-5 {
+  padding-right: 5px;
+}
+.p-l-r-5,
+.p-left-right-5 {
+  padding: 0 5px;
+}
+.p-l-r-10,
+.p-left-right-10 {
+  padding: 0 10px;
+}
+.p-l-r-20 {
+  padding: 0 20px;
+}
+.p-t-b-10 {
+  padding: 10px 0;
+}
+.p-t-b-5 {
+  padding: 5px 0;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
+.el-input__inner {
+  height: 33px;
+  font-size: 13px;
+  box-shadow: none;
+  border: 1px solid #74003c;
+}
+.el-input__inner:hover {
+  border-color: #74003c;
+}
+.el-input__inner:focus {
+  border-color: #74003c;
+  box-shadow: none;
+  transition-duration: 0.5s;
+}
+.el-input__inner::-webkit-input-placeholder {
+  line-height: 20px;
+}
+.el-input__inner,
+.el-checkbox__inner,
+.el-textarea__inner,
+.el-button {
+  border-radius: 0;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  /* logo */
+  /* 登录 */
+  /* 用户 */
+  /* 密码 */
+  /* 记住密码 */
+  /* 复选框 */
+  /* 登录按钮 */
+}
+.content .photo {
+  position: absolute;
+  width: 1200px;
+  height: 689px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.content .xct {
+  width: 1200px;
+  height: 689px;
+  box-shadow: 8px 10px 30px #ededed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.content .logo {
+  position: absolute;
+  left: 40px;
+  width: 85px;
+  height: 90px;
+}
+.content .land {
+  position: absolute;
+  top: 144px;
+  left: 756px;
+  width: 200px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.content .user {
+  position: absolute;
+  top: 260px;
+  left: 756px;
+  width: 386px;
+  height: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+.content .icon-user {
+  font-size: 18px;
+}
+.content .user input {
+  border: 0;
+  width: 318px;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+}
+.content .user input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+.content input:focus {
+  outline: none;
+}
+.content .password {
+  position: absolute;
+  top: 369px;
+  left: 756px;
+  width: 386px;
+  height: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+.content .icon-lock {
+  font-size: 18px;
+}
+.content .password input {
+  border: 0;
+  width: 318px;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+}
+.content .password input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+.content .password img {
+  width: 20px;
+  height: 20px;
+}
+.content .remember {
+  position: absolute;
+  top: 425px;
+  left: 758px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  line-height: 40px;
+}
+.content .remember input {
+  -webkit-appearance: none;
+  outline: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #666;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 14px;
+}
+.content .remember input:checked::after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 14px;
+  height: 14px;
+  content: "\2714";
+  font-size: 10px;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  color: #333;
+}
+.content .remember_password {
+  margin-left: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+.content .button {
+  position: absolute;
+  top: 507px;
+  left: 756px;
+  width: 386px;
+  height: 48px;
+  background: #000000;
+  cursor: pointer;
+}
+.content .button span {
+  margin-left: 177px;
+  width: 32px;
+  height: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 48px;
+}

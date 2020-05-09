@@ -11,6 +11,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: 400;
+}
+html,body{
+  font-size:100px;
 }
 </style>
 <script>
