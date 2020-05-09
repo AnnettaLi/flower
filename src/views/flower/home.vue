@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="imgbox">
-      <div class="imgbox-img">
+      <div class="imgbox-img" @click="toDetail(7)">
         <img
           class="imgbox-bg"
           src="http://img.zhichiwangluo.com/zcimgdir/album/file_5aa73c534159b.png"
@@ -56,19 +56,19 @@
           alt="图片加载失败"
         />
       </div>
-      <div class="imgbox-title">
+      <div class="imgbox-title" @click="toDetail(7)">
         <h2>玫瑰</h2>
         <h3>有关爱情</h3>
         <h3>If u love someone</h3>
       </div>
     </div>
     <div class="titlebox">
-      <div class="titlebox-title">
+      <div class="titlebox-title"  @click="toDetail(5)">
         <h2>绣球</h2>
         <h3>希望</h3>
         <h3>Two see the world</h3>
       </div>
-      <div class="titlebox-img">
+      <div class="titlebox-img"  @click="toDetail(5)">
         <img
           class="titlebox-bg"
           src="http://img.zhichiwangluo.com/zcimgdir/album/file_5aa76fcc5712d.png"
@@ -82,7 +82,7 @@
       </div>
     </div>
     <div class="imgbox">
-      <div class="imgbox-img">
+      <div class="imgbox-img"  @click="toDetail(4)">
         <img
           class="imgbox-bg"
           src="http://img.zhichiwangluo.com/zcimgdir/album/file_5aa73c534159b.png"
@@ -94,19 +94,19 @@
           alt="图片加载失败"
         />
       </div>
-      <div class="imgbox-title">
+      <div class="imgbox-title" @click="toDetail(4)">
         <h2>芍药</h2>
         <h3>殿春</h3>
         <h3 class="m-right-30">Be distressed at parting</h3>
       </div>
     </div>
     <div class="titlebox">
-      <div class="titlebox-title">
+      <div class="titlebox-title" @click="toDetail(3)">
         <h2>郁金香</h2>
         <h3>殿春</h3>
         <h3 class="m-left-30">Be distressed at parting</h3>
       </div>
-      <div class="titlebox-img">
+      <div class="titlebox-img" @click="toDetail(3)">
         <img
           class="titlebox-bg"
           src="http://img.zhichiwangluo.com/zcimgdir/album/file_5aa76fcc5712d.png"
@@ -144,6 +144,11 @@ export default {
         { src: "http://img.weiye.me/zcimgdir/album/file_58c0b9ea53ec1.png" }
       ]
     };
+  },
+  methods:{
+    toDetail:function(val){
+      this.$router.push("/flower/detail/"+val)
+    }
   },
   components: { tabbar }
 };

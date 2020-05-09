@@ -35,6 +35,7 @@
         <van-goods-action-button type="danger" text="立即购买" />
       </van-goods-action>
     </div>
+  <van-action-sheet v-model="show" :actions="actions" @select="onSelect" />
   </div>
 </template>
 
@@ -57,7 +58,7 @@ export default {
   data() {
     return {
       detailList: [],
-      checked:true
+      show:false,
     };
   },
   methods: {},
