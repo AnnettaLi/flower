@@ -90,11 +90,12 @@ export default new Vuex.Store({
           {url:"http://img.weiye.me/zcimgdir/image/20170310171649_89015.jpg"},
         ]
       }
-    ]
-  },
-  mutations: {
+    ],
+    shopCarList:[],
   },
   actions: {
+  },
+  mutations: {
   },
   modules: {
   }

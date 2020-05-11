@@ -44,6 +44,11 @@ const routes = [
     name: 'detail',
     component: () => import('../views/flower/flowerDetail.vue')
   },
+  {
+    path: '/buy/car',
+    name: 'buy/car',
+    component: () => import('../views/flower/shoppingCar.vue')
+  },
   // {
   //   path: '/about',
   //   name: 'about',

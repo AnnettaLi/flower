@@ -1,7 +1,7 @@
 <template>
   <div class="type-page">
     <form action="/home" class="form-search">
-      <el-input class="w-70" placeholder="请输入搜索内容" prefix-icon="el-icon-search" v-model="value"></el-input>
+      <el-input class="w-80" placeholder="请输入搜索内容" prefix-icon="el-icon-search" v-model="value"></el-input>
       <el-button type="info" v-if="this.value == ''" plain>搜索</el-button>
       <el-button type="primary" v-else>搜索</el-button>
     </form>
@@ -73,7 +73,7 @@ export default {
       width: 0.7rem;
       height: 0.3rem;
       line-height: 0.09rem;
-      margin-left: 0.3rem;
+      // margin-left: 0.3rem;
     }
   }
   .list-content {
@@ -95,8 +95,7 @@ export default {
       }
 
       .inner-content-title {
-        margin-left: 0.2rem;
-
+        margin-left: 8%;
         width: 90%;
         white-space: nowrap;
         overflow: hidden;
