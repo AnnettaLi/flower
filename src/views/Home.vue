@@ -74,26 +74,21 @@
     border: none;
   }
   h3 {
-    margin-left: 190px;
+    margin-left: 50px;
     text-align: left;
+    font-size: 18px;
+
   }
   .details{
     border: 1px solid #666;
     border-collapse:collapse;
-    /* border-top: none; */
-    /* border-bottom: none; */
     height: 40px;
-    margin: 0 180px;
+    margin: 0 20px;
+    font-size: 16px;
+
   }
   .details>span{
     text-align: center;
     line-height: 40px;
   }
-  /* .content input:first-child{
-    background-color: red;
-  }
-  .content div:first-child{
-    background-color: red;
-    border-bottom: 1px solid #666; 
-  } */
 </style>

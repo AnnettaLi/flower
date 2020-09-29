@@ -16,6 +16,8 @@
 html,
 body {
   font-size: 100px;
+  height: 100%;
+
 }
 </style>
 <script>

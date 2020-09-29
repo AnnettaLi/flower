@@ -9,11 +9,6 @@ const routes = [
     name: 'list',
     component: () => import('../views/List.vue')
   },
-  // {
-  //   path: '/home',
-  //   name: 'home',
-  //   component: () => import('../views/Home.vue')
-  // },
   {
     path: '/about',
     name: 'about',
@@ -22,20 +17,20 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    redirect:'/home'
+    component: () => import('../views/Home.vue')
   },
   {
-    path: '/home',
+    path: '/flower/home',
     name: 'home',
     component: () => import('../views/flower/home.vue')
   },
   {
-    path: '/type',
+    path: '/flower/type',
     name: 'type',
     component: () => import('../views/flower/type.vue')
   },
   {
-    path: '/my',
+    path: '/flower/my',
     name: 'my',
     component: () => import('../views/flower/my.vue')
   },
@@ -45,18 +40,16 @@ const routes = [
     component: () => import('../views/flower/flowerDetail.vue')
   },
   {
-    path: '/buy/car',
+    path: '/flower/buy/car',
     name: 'buy/car',
     component: () => import('../views/flower/shoppingCar.vue')
   },
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
+  //  父子组件
+  {
+    path: '/father',
+    name: 'father',
+    component: () => import('../views/partent/father.vue')
+  },
 ]
 
 const router = new VueRouter({
