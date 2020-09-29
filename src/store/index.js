@@ -91,8 +91,24 @@ export default new Vuex.Store({
         ]
       }
     ],
-    shopCarList:[],
-  },
+    shopCarList:[
+      {
+        id: "1",
+        src: "http://img.weiye.me/zcimgdir/album/file_58c274afbfcb9.jpg",
+        title: "触摸----薰衣草礼盒：进口薰衣草永生花",
+        price: "300.00",
+        num: "2"
+      },
+      {
+        id: "2",
+        src:
+          "http://img.weiye.me/zcimgdir/thumb/t_148913862958c273c5af543.jpg",
+        title: "十二星座经典七彩·摩羯座----彩虹永生玫瑰:厄瓜多尔进口巨型玫瑰",
+        price: "288.00",
+        num: "1"
+      },
+    ],
+  },                                                                        
   actions: {
   },
   mutations: {

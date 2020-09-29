@@ -13,14 +13,17 @@
   padding: 0;
   font-weight: 400;
 }
-html,body{
-  font-size:100px;
+html,
+body {
+  font-size: 100px;
 }
 </style>
 <script>
 export default {
   data() {
     return {};
-  }
+  },
 };
 </script>
+
+

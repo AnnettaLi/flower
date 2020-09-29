@@ -277,6 +277,8 @@ export default {
       }
       span {
         padding-left: 1.1rem;
+        font-size: .22rem;
+        line-height: .44rem;
         flex-grow: 1;
       }
       i {
@@ -307,3 +309,4 @@ van-action-sheet {
   overflow: normal !important;
 }
 </style>
+

@@ -4,15 +4,30 @@
       <h2 class="p-10">购物车</h2>
       <i class="p-10 el-icon-setting"></i>
     </div>
-    <div class="car-list"></div>
+    <van-tabs bind:change="onChange">
+      <van-tab title="全部">
+        <div class="shop-list">
+          <van-card num="2" tag="标签" price="10.00" desc="描述信息" title="商品标题">
+            <view slot="footer">
+              <van-button size="mini">按钮</van-button>
+              <van-button size="mini">按钮</van-button>
+            </view>
+          </van-card>
+        </div>
+      </van-tab>
+      <van-tab title="快递"></van-tab>
+    </van-tabs>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
 import { mapState } from "vuex";
-import { GoodsAction } from "vant";
+import { GoodsAction, Tabs, Tab, Card } from "vant";
 Vue.use(GoodsAction);
+Vue.use(Tabs);
+Vue.use(Tab);
+Vue.use(Card);
 
 export default {
   data() {
