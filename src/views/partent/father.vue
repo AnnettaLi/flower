@@ -2,8 +2,10 @@
   <div class="partent">
     <el-input v-model="topInput" placeholder="请输入内容"></el-input>
     <el-button type="success" @click="submit" circle>提交</el-button>
-    <div class="father" v-for="item in ylist" :key="item">
-      子组件说：{{ item }}
+    <div class="father-box">
+      <span class="father" v-for="item in ylist" :key="item">
+        {{ item }}
+      </span>
     </div>
     <children class="children" :qqqqqqqqqq="list" @aaaaaaa="fuzhi"></children>
   </div>
@@ -58,8 +60,21 @@ export default {
   button {
     width: 60px;
   }
+  .father-box{
+      display: flex;
+      flex-direction: column;
+  }
+  .father {
+    line-height: 0.18rem;
+    font-size: 0.18rem;
+    border: 1px solid #333;
+    border-radius: 0.9rem;
+    margin-top: 0.1rem;
+    padding: 0.1rem;
+  }
   .children {
     margin-top: 5%;
+    background: teal;
   }
 }
 </style>
